@@ -1,0 +1,223 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Durgesh}{Nandan}{ \urlstyle{same}\href{mailto:durgnan45@gmail.com}{durgnan45@gmail.com} | +91-9472987177
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Jain College of \\Engineering}
+\descript{B.E. in Computer Science Engineering}
+\location{2020 | Belgaum, IN}
+\sectionsep
+
+\subsection{St. Joseph High School}
+\descript{P.U.C.}
+\location{2016 | Patna, IN}
+\sectionsep
+
+\subsection{Christ Church \\Diocesan School}
+\descript{S.S.L.C.}
+\location{2014 |  Patna, IN}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/durgnan}{\bf durgnan} \\
+LinkedIn://  \href{https://www.linkedin.com/in/durgesh-nandan-75a80b140}{\bf durgesh-nandan} \\
+HackerRank://  \href{https://www.hackerrank.com/durgnan45}{\bf durgnan45} \\
+Stack Overflow://  \href{https://stackoverflow.com/users/11324413/durgesh-nandan}{\bf durgesh-nandan} \\
+HackerEarth://  \href{https://www.hackerearth.com/@durgnan45}{\bf @durgnan45}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications}
+MERN Specialization (Coursera) \\
+AWS Fundamentals (Coursera) \\
+Python (Coursera) \\
+MEAN (Udemy) \\
+\sectionsep
+\section{Languages}
+English (Professional) \\
+Hindi (Native) \\
+German (Beginner) \\
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Technologies}
+ReactJs \textbullet{} NodeJs \textbullet{} Angular \\
+MERN | MEAN Stack \textbullet{} Android \\
+Docker \textbullet{} AWS \textbullet{} GCP \\
+Flask \textbullet{} Redux \textbullet{} MaterialUI \textbullet{} REST \\
+\sectionsep
+
+\subsection{Programming}
+Javascript \textbullet{}   Typescript \textbullet{} Python \textbullet{} Java \\
+Data Structures \textbullet{}   Algorithms \textbullet{} OOPS \\
+Databases \textbullet{} CSS3 \textbullet{} HTML5 \textbullet{} SCSS \\
+Git \textbullet{} Github \\ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{axio}\sectionsep\\
+\descript{Software Engineer }
+\location{Apr 2022 - Present | Bengaluru, IN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Leading the Tata Pay Later Frontend in its design and development.
+\item Contributed to the Amazon Pay Later/axio UI/UX and features.
+\item Rebranded the frontend during transition from Capital Float to axio
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Synamedia}\sectionsep\\
+\descript{Software Engineer }
+\location{July 2020 - Apr 2022 | Bengaluru, IN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed, Developed and Tested Automatic Notice and Takedown System to detect Pirate contents over OTT, DTH, and other platforms to send legal notices in several escalation if the pirate is still delinquent.
+\item Developed and Tested A Complete product from scratch(MERN|MEAN Stack).
+\item Converted Wireframes and Prototypes to Rich UI/UX Web Applications, also designed native REST APIs and using tools like Swagger, containerized the applications using Docker. 
+\item Implemented multiple stage test cases covering all the cases. Maintained the Test Documents in Confluence
+\item Understand the business requirements from clients and peers, designed and developed the requirements, maintain versions and releases 
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{MedApp}
+\descript{| SIH 2020}
+A mobile application that can be used by the victim or
+citizen present nearby to send alarm message during emergencies. The app locates the
+nearest available healthcare providers such as ambulance and also sends a notification to nearby healthcare workers asking for help. Provides First aid tips.
+\sectionsep
+
+\runsubsection{Saksham Application}
+\descript{| Academic Project}
+An Android application for Visually Disabled that uses camera from there phone to detect the objects obstructing
+their path and notify them by either voice or vibration whichever the user chooses. This Project uses
+Machine Learning in Object Detection and Image Classification and has been developed by using
+TensorFlow, CUDA and SSD model. We made our Custom Dataset for the Project to train the model.
+\sectionsep
+
+\runsubsection{Blind Calculator}
+\descript{| Google I/O Extended 2018}
+An Android Application that can solve complex mathematical expressions using only the voice of end-
+user.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2021	     & Finalist  & TechGig Code Gladiators 2021\\
+2020	     & Winner  & SS42 Smart India Hackathon 2020\\
+2019	     & 2\textsuperscript{nd}/60  & CodeWar KLE MSSCET \\
+2018     & 3\textsuperscript{rd}/100 & Google I/O Extended App Development Competition  \\
+2017     & 3\textsuperscript{rd}/100 & Coding Competition KLECET Chikodi \\
+2017     & 3\textsuperscript{rd}/80 & Quiz Bowl KLECET Chikodi \\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
